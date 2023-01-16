@@ -1,7 +1,7 @@
-import { DateTime } from './luxon.min.js'
+import { DateTime } from './vendor/luxon.min.js';
 
 export default class Clock {
-  constructor (domElement) {
+  constructor(domElement) {
     this.date = document.getElementById(domElement);
     this.updateTime();
   }
@@ -9,7 +9,7 @@ export default class Clock {
   updateTime = () => {
     const currentDateTime = DateTime.now();
     const timeFormat = DateTime.DATETIME_SHORT_WITH_SECONDS;
-    
+
     this.date.innerHTML = currentDateTime.toLocaleString(timeFormat);
 
     setInterval(this.updateTime, 1000);
