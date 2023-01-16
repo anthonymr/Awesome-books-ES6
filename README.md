@@ -5,6 +5,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -36,6 +37,14 @@
     <li><a href="https://www.javascript.com/">JavaScript</a></li>
   </ul>
 </details>
+
+### Key Features <a name="key-features"></a>
+
+- **Store your favorites books titles into a list**
+- **Remove it when you finish reading it**
+- **The web browser will remember your information**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
