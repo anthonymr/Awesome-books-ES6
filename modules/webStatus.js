@@ -1,7 +1,7 @@
 export default class WebStatus {
   constructor(config) {
     WebStatus.webSections = config.webSections;
-    WebStatus.defaultSection = WebStatus.webSections[config.defaultSection]
+    WebStatus.defaultSection = WebStatus.webSections[config.defaultSection];
     WebStatus.getDomSections();
     WebStatus.getLinkElements();
     WebStatus.bindLinksToSections();
