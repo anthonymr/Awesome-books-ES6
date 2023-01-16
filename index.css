@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/pexels-photo-10526919.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Itim', cursive;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.bordered {
+  border: 3px solid black;
+  width: 100%;
+  padding: 0 30px;
+}
+
+#navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #000;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.nav__title {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.3rem;
+  list-style: none;
+}
+
+.list {
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.addNew,
+.contact {
+  padding-left: 15px;
+  cursor: pointer;
+  border-left: 2px solid #000;
+  transition: 0.3s all ease;
+}
+
+.list:hover,
+.addNew:hover,
+.contact:hover {
+  color: cornflowerblue;
+}
+
+#date {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 20px;
+  width: 100%;
+  text-align: right;
+  padding: 0 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+input {
+  border: 2px solid black;
+  padding: 5px;
+  width: 300px;
+  border-radius: 3px;
+}
+
+button {
+  border: 2px solid black;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: black 5px 5px 0 -3px;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+h1 {
+  padding: 20px;
+}
+
+#book-list {
+  max-height: calc(100% - 150px);
+  width: 100%;
+  min-height: 100px;
+  list-style: none;
+  overflow-y: auto;
+}
+
+#book-list li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+
+#book-list > li:nth-child(odd) {
+  background-color: rgb(217, 217, 217);
+}
+
+li span {
+  margin-right: 4px;
+}
+
+body > section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 200px);
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+footer {
+  line-height: 50px;
+}
